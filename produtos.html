@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header>
+        <h1>Produtos</h1>
+        <div class="container">
+            <a href="home.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="clientes.html">Clientes</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="cadastro">
+            <button id="abrirModal">Cadastrar Produto</button>
+        </div>
+
+        <div id="meuModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um produto</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <textarea placeholder="Descrição" name="descricao"></textarea>
+                <input type="number" placeholder="Valor de Custo" name="valor_custo" step="0.01">
+                <input type="number" placeholder="Valor de Venda" name="valor_venda" step="0.01">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </div>
+
+        <div class="apresentar-produtos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Valor de Custo</th>
+                        <th>Valor de Venda</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pote da hello kitty</td>
+                        <td>Um pote fofo e funcional com o charme da Hello Kitty, perfeito para decorar e organizar!</td>
+                        <td>R$ 39,00</td>
+                        <td>R$ 50,00</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>copo do Snoppy</td>
+                        <td>Um copo divertido e estiloso com o Snoopy, perfeito para alegrar suas bebidas!</td>
+                        <td>R$ 20,00</td>
+                        <td>R$ 45,00</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>by Eloá</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header>
+        <h1>Clientes</h1>
+        <div class="container">
+            <a href="home.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="clientes.html">Clientes</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="cadastro">
+            <button id="abrirModal">Novo Cliente</button>
+        </div>
+
+        <div id="meuModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um cliente</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="text" placeholder="CPF" name="cpf">
+                <input type="email" placeholder="Email" name="email">
+                <input type="text" placeholder="Logradouro" name="logradouro">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </div>
+
+        <div class="apresentar-clientes">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Email</th>
+                        <th>Logradouro</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Olivia Rodrigo</td>
+                        <td>133.456.389-00</td>
+                        <td>Oliviasour@email.com</td>
+                        <td>Rua A, 270</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sabrina Carpenter</td>
+                        <td>927.654.371-00</td>
+                        <td>Sabrinaplease@email.com</td>
+                        <td>Rua B, 294</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>by Eloá</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

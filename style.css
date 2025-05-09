@@ -1,0 +1,122 @@
+:root {
+    --background: #FDF3F5; /* Branco levemente rosado */
+    --primary: #FADADD; /* Rosa claro */
+    --secondary: #F5C6D6; /* Rosa pastel */
+    --accent: #F3A6C8; /* Rosa médio */
+    --text-dark: #F3A6C8; /* Rosa médio para títulos */
+    --button-dark: #E09EA6; /* Rosa suave */
+    --button-text: #FFFFFF; /* Branco para texto do botão */
+}
+
+body {
+    background-color: var(--background);
+    color: var(--button-dark);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: var(--primary); /* Cor de fundo do header */
+    color: var(--text-dark); /* Cor do texto no header */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento abaixo do header */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+h1 {
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+.card {
+    background-color: var(--secondary);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do formulário */
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid var(--button-dark);
+    border-radius: 5px;
+    background-color: var(--background);
+    width: calc(100% - 16px); /* Ajusta a largura para incluir padding */
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    height: 100px; /* Altura padrão para a área de texto */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Aumenta o espaço acima da tabela */
+}
+
+th, td {
+    border: 1px solid var(--button-dark);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--accent);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--button-text);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+.footer {
+    background-color: var(--accent);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
